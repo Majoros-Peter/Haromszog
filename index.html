@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="java.js"></script>
+    <style>
+        fieldset{
+            background-color: cornsilk;
+            border-radius: 6px;
+            box-shadow: 10px 30px goldenrod;
+        }
+        legend{
+            font-size: large;
+            font-weight: bold;
+        }
+        button{
+            background-color: white;
+            border: 1px grey solid;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Derékszögű háromsög oldalhosszai</legend>
+            <label for="szam_a">egyik befogó: </label>
+            <input type="number" id="szam_a" name="szam_a"><br>
+            <label for="szam_b">másik befogó: </label>
+            <input type="number" id="szam_b" name="szam_b"><br>
+            <label for="szam_c">átfogó: </label>
+            <input type="number" id="szam_c" name="szam_c"><br>
+            <hr>
+            <button type="button" onclick="Megszerkesztheto()">Megszerkeszthető?</button>
+            <button type="button" onclick="Random()">Véletlen oldalhosszak 10..100-ból</button>
+            <button type="button" onclick="Atfogo()">Átfogó kiszámítása</button>
+        </fieldset>
+    </form>
+</body>
+</html>
